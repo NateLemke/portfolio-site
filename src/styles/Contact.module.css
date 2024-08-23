@@ -1,0 +1,88 @@
+
+  .contactDiv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    width: 100vw;
+    padding-top: 50px;
+  }
+
+  .contactEntry {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    visibility: hidden;
+  }
+
+  .contactIcon {
+    font-size: 3rem;
+    vertical-align: bottom;
+    margin: 15px;
+  }
+
+  .contactHover {
+    transition: transform .2s ease;
+  }
+
+  .contactHover:hover {
+    transform: scale(1.05);
+  }
+  /* Animations */
+  @keyframes slideFromRight {
+    0% {
+      transform: translateX(100%);
+      opacity: 0;
+    }
+
+    100% {
+      transform: translateX(0);
+      opacity: 100%;
+      visibility: visible;
+    }
+  }
+
+  @keyframes slideUp {
+    0% {
+      transform: translateY(100%);
+      opacity: 0;
+    }
+
+    100% {
+      transform: translateY(0);
+      opacity: 100%;
+      visibility: visible;
+    }
+  }
+
+  .slideRight {
+    animation-name: slideFromRight;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+  }
+
+  .slideUp {
+    animation-name: slideUp;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+  }
+
+/* Media Queries */
+  @media only screen and (max-width: 450px)  {
+    .contactDiv {
+      padding-top: 20%;
+    }
+
+    #contactTitle {
+      margin-bottom: 30px;
+    }
+
+    .contactEntry {
+      font-size: .6rem;
+    }
+
+    .contactIcon {
+      font-size: 2rem;
+      margin: 5px;
+    }
+   }

@@ -1,0 +1,209 @@
+.aboutContainer {
+    height:calc(100vh - 50px);
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+}
+
+.bioContainer {
+    height: 100%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 50px;
+    padding-left: 10%;
+    font-weight: 500;
+}
+
+.photoContainer {
+    height: 100%;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-right: 20%;
+}
+
+.bioText {
+    width:70%;
+    text-align: center;
+    animation-delay: 1s;
+    visibility: hidden;
+}
+
+.photoDiv {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(255, 100, 0);
+    position: relative;
+}
+
+.pictureFrame {
+    height: 250px;
+    width: 200px;
+    border-radius: 20px;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    visibility: hidden;
+}
+
+.pf1 {
+    background-color: darkgray;
+    transform: translate(20px, -20px);
+    z-index: 1;
+    animation-delay: 0;
+}
+
+.pf2 {
+    background-color: rgb(255, 100, 0);
+    transform: translate(10px, -10px);
+    z-index: 2;
+    animation-delay: 0.3s;
+}
+
+.pf3 {
+    background-color: black;
+    z-index: 3;
+    animation-delay: 0.6s;
+}
+
+
+.headshot {
+    padding-top: 50%;
+    padding-right: 30%;
+    font-size: 10rem;
+    z-index: 4;
+    animation-delay: 5s;
+}
+
+/* Animations */
+@keyframes slideFromRight {
+    0% {
+      transform: translateX(100%);
+      opacity: 0;
+    }
+
+    100% {
+      transform: translateX(0);
+      opacity: 100%;
+      visibility: visible;
+    }
+    
+  }
+
+  @keyframes slide20 {
+    0% {
+      transform: translate(100%, 20px);
+      opacity: 0;
+    }
+
+    100% {
+        transform: translate(-20px, 20px);
+      opacity: 100%;
+      visibility: visible;
+    }
+    
+  }
+
+  @keyframes slide10 {
+    0% {
+      transform: translate(100%, 10px);
+      opacity: 0;
+    }
+
+    100% {
+        transform: translate(-10px, 10px);
+      opacity: 100%;
+      visibility: visible;
+    }
+    
+  }
+
+  @keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 100%;
+        visibility: visible;
+    }
+  }
+
+.slideFromRight {
+    animation-name: slideFromRight;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+.slide20 {
+    animation-name: slide20;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+.slide10 {
+    animation-name: slide10;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+.fadeIn {
+    animation-name: fadeIn;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+
+.fadeInDelayed {
+    visibility: hidden;
+    animation-name: fadeIn;
+    animation-duration: 2s;
+    animation-delay: 1.5s;
+    animation-fill-mode: forwards;
+}
+
+/* Media Queries */
+@media only screen and (max-width: 1000px)  {
+    .bioContainer {
+        font-size: .75rem;
+    }
+}
+
+@media only screen and (max-width: 700px)  {
+    .aboutContainer {
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+    }
+
+    .bioContainer {
+        width: auto;
+        height: auto;
+        padding-top: 10%;
+        padding-left: 0;
+        font-size: 0.75rem;
+        padding-bottom: 5%;
+    }
+
+    .photoContainer {
+        height: auto;
+        width: auto;
+        padding-right: 0%;
+        padding-top: 10%;
+    }
+
+    .pictureFrame {
+        height: 120px;
+        width: 100px;
+    }
+
+    .headshot {
+        font-size: 4rem;
+        margin-top: 40%;
+        margin-right: 30%;
+    }
+}

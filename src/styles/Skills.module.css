@@ -1,0 +1,206 @@
+.skillsContainer {
+    width: 100vw;
+    height: calc(100vh - 50px);
+    display: flex;
+    flex-direction: row;
+}
+
+.educationDiv {
+    height: 100%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.skillsDiv {
+    height: 100%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+}
+
+#rightTitle {
+    clip-path: polygon(0 0 , 95% 0, 100% 100%, 5% 100%);
+}
+
+.eduEntryContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 100px;
+    width: 500px;
+    background-color: rgb(25, 77, 136);
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 35px;
+}
+
+.eduImage {
+    height: 80px;
+    width: 80px;
+}
+
+.eduTextDiv {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    font-size: 0.8rem;
+    font-weight: bold;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.eduTextDiv p {
+    margin-top: 5px;
+}
+
+.tagContainer {
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    grid-template-columns: 1fr;
+    justify-content: center;
+}
+
+.skillTagDiv {
+    height: 50px;
+    width: 200px;
+    border-radius: 25px;
+    margin: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 1.5rem;
+    visibility: hidden;
+}
+
+.skillTagDiv p {
+    margin-left: auto;
+    margin-right: auto;
+    padding-right: 25px;
+}
+
+.skillLogo {
+    margin-top: 5px;
+    margin-left: 20px;
+    font-size: 2rem;
+}
+
+.tagWrapper {
+    display: inline-block;
+}
+
+/* Animations */
+@keyframes slideFromRight {
+    0% {
+      transform: translateX(100%);
+      opacity: 0;
+    }
+
+    100% {
+      transform: translateX(0);
+      opacity: 100%;
+      visibility: visible;
+    }
+  }
+
+  @keyframes slideFromLeft {
+    0% {
+      transform: translateX(-100%);
+      opacity: 0;
+    }
+
+    100% {
+      transform: translateX(0);
+      opacity: 100%;
+      visibility: visible;
+    }
+  }
+
+  @keyframes slideUp {
+    0% {
+      transform: translateY(100%);
+      opacity: 0;
+    }
+
+    100% {
+      transform: translateY(0);
+      opacity: 100%;
+      visibility: visible;
+    }
+  }
+
+  .slideRight {
+    animation-name: slideFromRight;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+  }
+
+  .slideLeft{
+    animation-name: slideFromLeft;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+  }
+
+  .slideUp {
+    animation-name: slideUp;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+  }
+
+/* Media Queries */
+@media only screen and (max-width: 1000px)  {
+    .skillsContainer {
+        height: auto;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .educationDiv {
+        width: 100vw;
+        height: auto;
+        margin-top: 20px;
+    }
+
+    .skillsDiv {
+        width: auto;
+        height: auto;
+        margin-top: 20px;
+    }
+
+    .eduImage {
+        width: 50px;
+        height: 50px;
+        padding-right: 5px;
+    }
+
+    .eduEntryContainer {
+        width: 300px;
+        height: auto;
+        margin-bottom: 10px;
+    }
+
+    .eduTextDiv {
+        font-size: 0.5rem;
+    }
+
+    .skillTagDiv {
+        width: 100px;
+        height: 25px;
+        font-size: 0.75rem;
+    }
+
+    .skillLogo {
+        font-size: 1rem;
+        margin-top: 3px;
+        margin-right: 2px;
+    }
+}

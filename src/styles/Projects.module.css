@@ -1,0 +1,221 @@
+.projectsContainer {
+    width: 100vw;
+    height: calc(100vh - 50px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 50px;
+}
+
+.slideDiv {
+    width: 500px;
+    height: 250px;
+    display: flex;
+    flex-direction: row;
+    border-radius: 25px;
+    overflow: hidden;
+    border: solid black 1px;
+    background-color: black;
+}
+
+
+
+.slideImageDiv {
+    height: 100%;
+    width: 60%;
+    clip-path: polygon(0 0 , 100% 0, 90% 100%, 0 100%);
+}
+
+.slideTextDiv {
+    height: 100%;
+    width: 40%;
+    margin-right: 20px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+.slideTextDiv h3 {
+    margin-bottom: 5px;
+}
+
+.projectImage {
+    height: 100%;
+    width: 100%;
+}
+
+.carouselContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    visibility: hidden;
+}
+
+.slideViewContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.slideFrame {
+    width: 500px;
+    height: 250px;
+    border-radius: 25px;
+    overflow: hidden;
+    border: solid black 3px;
+    margin: 10px;
+    position: relative;
+    background-color: black;
+}
+
+.arrow {
+    font-size: 2.5rem;
+    cursor: pointer;
+}
+
+.sideArrows {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+}
+
+.markerContainer{
+    display: flex;
+    flex-direction: row;
+}
+
+.marker {
+    width: 12px;
+    height: 12px;
+    border-radius: 6px;
+    background-color: #dcdcdc;
+    margin: 3px;
+}
+
+.activeMarker {
+    background-color: #808080;
+}
+
+.slide {
+    position: absolute;
+    display: none;
+}
+
+.activeSlide {
+    display: flex;
+}
+
+#leftArrow {
+    display: inline;
+}
+
+#rightArrow {
+    display: inline;
+}
+
+#upArrow {
+    display: none;
+    visibility: hidden;
+}
+
+#downArrow {
+    display: none;
+    visibility: hidden;
+}
+
+/* Animations */
+  @keyframes slideFromRight {
+    0% {
+      transform: translateX(100%);
+      opacity: 0;
+    }
+
+    100% {
+      transform: translateX(0);
+      opacity: 100%;
+      visibility: visible;
+    }
+  }
+
+  @keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 100%;
+        visibility: visible;
+    }
+  }
+
+  .slideFromRight {
+    animation-name: slideFromRight;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+.fadeIn {
+    animation-name: fadeIn;
+    animation-duration: 3s;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+}
+
+/* Media Queries */
+@media only screen and (max-width: 600px)  {
+    .projectsContainer {
+        padding-top: 0;
+        justify-content: center;
+        align-items: center;
+    }
+    .slideDiv {
+        width: 250px;
+        height: 125px;
+    }
+
+    .slideFrame {
+        width: 250px;
+        height: 125px;
+    }
+
+    .slideTextDiv {
+        font-size: 0.6rem;
+    }
+
+    .carouselContainer {
+        flex-direction: row-reverse;
+        margin-top: 10%;
+        margin-bottom: 10%;
+    }
+
+    .slideViewContainer {
+        flex-direction: column;
+    }
+
+    .markerContainer {
+        flex-direction: column;
+    }
+
+    #leftArrow {
+        display: none;
+    }
+
+    #rightArrow {
+        display: none;
+    }
+
+    #upArrow {
+        display: inline;
+    }
+    
+    #downArrow {
+        display: inline;
+    }
+
+    .sideArrows {
+        visibility: visible;
+    }
+}
