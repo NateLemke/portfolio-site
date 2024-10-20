@@ -43,6 +43,7 @@
 .projectImage {
     height: 100%;
     width: 100%;
+    object-fit:contain;
 }
 
 .carouselContainer {
@@ -173,16 +174,26 @@
     }
     .slideDiv {
         width: 250px;
-        height: 125px;
+        height: 300px;
+        flex-direction: column-reverse;
     }
 
     .slideFrame {
         width: 250px;
-        height: 125px;
+        height: 300px;
     }
 
     .slideTextDiv {
         font-size: 0.6rem;
+        width: 100%;
+        height: 40%;
+         padding: 4px;
+    }
+
+    .slideImageDiv {
+        width: 100%;
+        height: 60%;
+        clip-path: polygon(0 10%, 100% 0, 100% 100%, 0% 100%);
     }
 
     .carouselContainer {

@@ -3,6 +3,7 @@ import { ScanlinesData } from "@/context/scanlinesContext";
 import { IoIosMail } from "react-icons/io";
 import { FaLinkedin } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
+import { IoDocumentText } from "react-icons/io5";
 import styles from "@/styles/Contact.module.css";
 import NavBarTop from "@/components/navBarTop";
 import { Aldrich } from "next/font/google";
@@ -50,6 +51,13 @@ export default function About() {
                         style={{animationDelay:"1.7s"}}>
                             <FaGithub  className={`${styles.contactIcon}`}/>
                             <h2>github.com/NateLemke</h2>
+                        </div>
+                    </a>
+                    <a href="/ResumeBase.pdf">
+                        <div className={`${styles.contactEntry} ${styles.contactHover} ${styles.slideUp}`}
+                        style={{animationDelay:"2.2s"}}>
+                            <IoDocumentText  className={`${styles.contactIcon}`}/>
+                            <h2>My Resume</h2>
                         </div>
                     </a>
                 </div>

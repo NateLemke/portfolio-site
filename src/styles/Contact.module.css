@@ -28,6 +28,7 @@
   .contactHover:hover {
     transform: scale(1.05);
   }
+
   /* Animations */
   @keyframes slideFromRight {
     0% {
