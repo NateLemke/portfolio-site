@@ -206,7 +206,6 @@
 
     .carouselContainer {
         flex-direction: row-reverse;
-        margin-top: 5%;
     }
 
     .slideViewContainer {
