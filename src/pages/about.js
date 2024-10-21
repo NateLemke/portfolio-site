@@ -34,9 +34,9 @@ export default function About() {
                         </div>
                         <div className={`${styles.bioText} ${styles.fadeIn}`}>
                             <p>
-                                I am a recent graduate of the Computer Systems Bachelor of Technology degree program at BCIT. 
+                                I am a recent graduate of the Computer Systems Bachelor of Technology degree program at BCIT, which I completed with Distinction. 
                                 In this program I completed both the Technical Programming and Network Security Applications Development options. 
-                                During my time at BCIT I completed various team-based and solo programming projects. 
+                                During my time at BCIT I gained lots of experience working on various team-based and solo programming projects. 
                                 I am passionate about coding and enjoy learning new langauages and techniques.
                             </p>
                             <br/>

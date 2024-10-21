@@ -6,6 +6,8 @@ import { FaGitAlt } from "react-icons/fa";
 import { RiTailwindCssFill } from "react-icons/ri";
 import { BiLogoCPlusPlus } from "react-icons/bi";
 import { RiNextjsFill } from "react-icons/ri";
+import { IoLogoFirebase } from "react-icons/io5";
+import { FaPython } from "react-icons/fa";
 
 export const skillsData=[
     {
@@ -39,6 +41,18 @@ export const skillsData=[
         "color":"#38bdf8"
     },
     {
+        "key":7,
+        "text":"Firebase",
+        "logo":<IoLogoFirebase/>,
+        "color":"#ffcb2b"
+    },
+    {
+        "key":9,
+        "text":"Python",
+        "logo":<FaPython/>,
+        "color":"#ffca00"
+    },
+    {
         "key":5,
         "text":"Next.JS",
         "logo":<RiNextjsFill/>,
@@ -51,7 +65,7 @@ export const skillsData=[
         "color":"#004482"
     },
     {
-        "key":7,
+        "key":8,
         "text":"Git",
         "logo":<FaGitAlt/>,
         "color":"#f05033"
