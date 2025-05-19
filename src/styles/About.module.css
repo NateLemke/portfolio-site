@@ -69,7 +69,9 @@
     background-color: black;
     z-index: 3;
     animation-delay: 0.6s;
-    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 
@@ -78,8 +80,8 @@
     height: 100%;
     z-index: 4;
     animation-delay: 5s;
-    background-color: red;
     border-radius: 20px;
+    object-fit: fill;
 }
 
 /* Animations */
@@ -192,10 +194,12 @@
     }
 
     .photoContainer {
-        height: auto;
-        width: auto;
+        /* height: auto;
+        width: auto; */
         padding-right: 0%;
-        padding-top: 10%;
+        padding-top: 15%;
+        padding-bottom: 20%;
+        
     }
 
     .pictureFrame {
@@ -203,9 +207,9 @@
         width: 100px;
     }
 
-    .headshot {
+    /* .headshot {
         font-size: 4rem;
         margin-top: 40%;
         margin-right: 30%;
-    }
+    } */
 }

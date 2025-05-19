@@ -49,7 +49,6 @@ export default function About() {
                         <div className={`${styles.photoDiv}`}>
                             <div className={`${styles.pictureFrame} ${styles.pf3} ${styles.slide20}
                             ${darkModeOn ? "greyBackground":"blackBackground"}`}>
-                                {/* <img src="/headshot.jpg" className={`${styles.headshot} ${styles.fadeInDelayed}`}></img> */}
                                 <img src="/headshot.jpg" className={`${styles.headshot} ${styles.fadeInDelayed}`}></img>
                             </div>
                             <div className={`${styles.pictureFrame} ${styles.pf2} ${styles.slide10}`}/>
