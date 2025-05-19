@@ -48,7 +48,7 @@ export default function Home() {
             <h2 className={`${styles.introText}`}>Hi, I'm</h2>
             <h1 className={`${styles.name}`}><span className={`${styles.firstLetter}`}>N</span>ate <span className={`${styles.firstLetter}`}>L</span>emke</h1>
             <h2 className={`${styles.introText}`}>
-              Web Developer in
+              Software Developer in
               <span className={`${styles.location}`}> Vancouver, BC</span>
             </h2>
           </div>

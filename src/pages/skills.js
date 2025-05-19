@@ -42,12 +42,12 @@ export default function About() {
                         <EducationEntry 
                         topText={"Computer Systems Technology Diploma"}
                         midText={"Technical Programming Option"}
-                        bottomText={"Graduated with Distinction in December 2019"}
+                        bottomText={"Graduated with Distinction in 2019"}
                         />
                         <EducationEntry 
                         topText={"Computer Systems Bachelor of Technology Degree"}
                         midText={"Network Security Applications Development Option"}
-                        bottomText={"Graduated with Distinction in May 2024"}
+                        bottomText={"Graduated with Distinction in 2024"}
                         />
                     </div>
                     <div className={`${styles.skillsDiv}`}>
